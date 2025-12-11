@@ -11,3 +11,12 @@ GPT logits → 3D tensor '''
 
 res=torch.tensor([1,2,3,4,5],dtype=torch.long)
 print(res)
+
+
+'''torch.stack takes a list of tensors of the same shape and stacks them together to create a new dimension.'''
+a = torch.tensor([1, 2, 3])
+b = torch.tensor([4, 5, 6])
+c = torch.tensor([7, 8, 9])
+
+res=torch.stack([a, b, c])
+print(res)
